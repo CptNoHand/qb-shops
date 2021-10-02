@@ -308,14 +308,22 @@ Config.Products = {
             type = "item",
             slot = 3,
         },
-        -- [4] = {
-        --     name = "smoketrailred",
-        --     price = 250,
-        --     amount = 50,
-        --     info = {},
-        --     type = "item",
-        --     slot = 4,
-        -- },
+        [4] = {
+            name = "fishingrod",
+            price = 250,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 4,
+        },
+        [5] = {
+            name = "fishingbait",
+            price = 10,
+            amount = 2500,
+            info = {},
+            type = "item",
+            slot = 5,
+        },
     },   
     ["mustapha"] = {
         [1] = {
