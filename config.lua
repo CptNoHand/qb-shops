@@ -98,6 +98,22 @@ Config.Products = {
             type = "item",
             slot = 12,
         },
+        [13] = {
+            name = "boosterpack",
+            price = 25,
+            amount = 100,
+            info = {},
+            type = "item",
+            slot = 13,
+        },
+        [14] = {
+            name = "boosterbox",
+            price = 50,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 14,
+        },
     },
     ["hardware"] = {
         [1] = {
