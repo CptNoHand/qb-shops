@@ -140,6 +140,9 @@ CreateThread(function()
 			elseif Config.Locations[store]["products"] == Config.Products["hardware"] then
 				SetBlipSprite(StoreBlip, 402)
 				SetBlipScale(StoreBlip, 0.8)
+            elseif Config.Locations[store]["products"] == Config.Products["mechanic"] then
+				SetBlipSprite(StoreBlip, 402)
+				SetBlipScale(StoreBlip, 0.8)
 			elseif Config.Locations[store]["products"] == Config.Products["weapons"] then
 				SetBlipSprite(StoreBlip, 110)
 				SetBlipScale(StoreBlip, 0.85)
