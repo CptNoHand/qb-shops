@@ -220,7 +220,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 15,
-            requiredJob = { "mechanic" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
         },        
     },
     ["coffeeshop"] = {
@@ -433,6 +433,278 @@ Config.Products = {
             type = 'item',
             slot = 1,
         }
+    },
+    ["mechanic"] = {
+        [1] = {
+            name = "mechanic_tools",
+            price = 250,
+            amount = 250,
+            info = {},
+            type = "item",
+            slot = 1,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [2] = {
+            name = "toolbox",
+            price = 250,
+            amount = 250,
+            info = {},
+            type = "item",
+            slot = 2,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [3] = {
+            name = "turbo",
+            price = 2500,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 3,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [4] = {
+            name = "v8engine",
+            price = 1500,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 4,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [5] = {
+            name = "shonen",
+            price = 4000,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 5,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [6] = {
+            name = "race_transmission",
+            price = 250,
+            amount = 250,
+            info = {},
+            type = "item",
+            slot = 6,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [7] = {
+            name = "race_brakes",
+            price = 250,
+            amount = 250,
+            info = {},
+            type = "item",
+            slot = 7,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [8] = {
+            name = "car_armor",
+            price = 250,
+            amount = 250,
+            info = {},
+            type = "item",
+            slot = 8,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [9] = {
+            name = "suspension",
+            price = 2500,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 9,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [10] = {
+            name = "suspension2",
+            price = 1500,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 10,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [11] = {
+            name = "nos",
+            price = 4000,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 11,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [12] = {
+            name = "underglow_controller",
+            price = 250,
+            amount = 250,
+            info = {},
+            type = "item",
+            slot = 12,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [13] = {
+            name = "headlights",
+            price = 250,
+            amount = 250,
+            info = {},
+            type = "item",
+            slot = 13,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [14] = {
+            name = "tint_supplies",
+            price = 250,
+            amount = 250,
+            info = {},
+            type = "item",
+            slot = 14,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [15] = {
+            name = "customplate",
+            price = 2500,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 15,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [16] = {
+            name = "hood",
+            price = 1500,
+            amount = 16,
+            info = {},
+            type = "item",
+            slot = 16,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [17] = {
+            name = "roof",
+            price = 4000,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 17,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [18] = {
+            name = "spoiler",
+            price = 250,
+            amount = 250,
+            info = {},
+            type = "item",
+            slot = 18,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [19] = {
+            name = "bumper",
+            price = 250,
+            amount = 250,
+            info = {},
+            type = "item",
+            slot = 19,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [20] = {
+            name = "skirts",
+            price = 250,
+            amount = 250,
+            info = {},
+            type = "item",
+            slot = 20,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [21] = {
+            name = "exhaust",
+            price = 2500,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 21,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [22] = {
+            name = "seat",
+            price = 1500,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 22,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [23] = {
+            name = "rims",
+            price = 4000,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 23,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [24] = {
+            name = "livery",
+            price = 250,
+            amount = 250,
+            info = {},
+            type = "item",
+            slot = 24,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [25] = {
+            name = "paintcan",
+            price = 250,
+            amount = 250,
+            info = {},
+            type = "item",
+            slot = 25,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [26] = {
+            name = "tires",
+            price = 250,
+            amount = 250,
+            info = {},
+            type = "item",
+            slot = 26,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [27] = {
+            name = "horn",
+            price = 2500,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 27,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [28] = {
+            name = "internals",
+            price = 1500,
+            amount = 16,
+            info = {},
+            type = "item",
+            slot = 28,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [29] = {
+            name = "externals",
+            price = 4000,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 29,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [30] = {
+            name = "spoiler",
+            price = 250,
+            amount = 250,
+            info = {},
+            type = "item",
+            slot = 18,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
     },
 }
 
@@ -802,6 +1074,15 @@ Config.Locations = {
             [1] = vector3(-1505.91, 1511.78, 115.29)
         },
         ["products"] = Config.Products["leisureshop"],
+        ["showblip"] = true,
+    },
+    ["hardware4"] = {
+        ["label"] = "Autoteile",
+        ["type"] = "hardware",
+        ["coords"] = {
+            [1] = vector3(1196.48, -3253.67, 7.1)
+        },
+        ["products"] = Config.Products["mechanic"],
         ["showblip"] = true,
     },
 }
