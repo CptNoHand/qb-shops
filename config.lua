@@ -91,7 +91,7 @@ Config.Products = {
             slot = 12,
         },
         [12] = {
-            name = "uushirolls",
+            name = "sushirolls",
             price = 3,
             amount = 50,
             info = {},
