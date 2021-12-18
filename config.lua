@@ -92,7 +92,7 @@ Config.Products = {
         },
         [12] = {
             name = "sushirolls",
-            price = 3,
+            price = 6,
             amount = 50,
             info = {},
             type = "item",
