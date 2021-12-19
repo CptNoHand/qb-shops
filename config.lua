@@ -802,6 +802,42 @@ Config.Products = {
             slot = 31,
             requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
         },
+        [32] = {
+            name = "iron",
+            price = 10,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 32,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [33] = {
+            name = "plastic",
+            price = 10,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 33,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [34] = {
+            name = "steel",
+            price = 10,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 34,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
+        [35] = {
+            name = "aluminum",
+            price = 10,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 35,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+        },
     },
 }
 
