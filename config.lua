@@ -533,7 +533,7 @@ Config.Products = {
     ["mechanic"] = {
         [1] = {
             name = "mechanic_tools",
-            price = 250,
+            price = 500,
             amount = 250,
             info = {},
             type = "item",
@@ -542,7 +542,7 @@ Config.Products = {
         },
         [2] = {
             name = "toolbox",
-            price = 250,
+            price = 500,
             amount = 250,
             info = {},
             type = "item",
@@ -551,7 +551,7 @@ Config.Products = {
         },
         [3] = {
             name = "turbo",
-            price = 2500,
+            price = 25000,
             amount = 5,
             info = {},
             type = "item",
@@ -560,7 +560,7 @@ Config.Products = {
         },
         [4] = {
             name = "v8engine",
-            price = 1500,
+            price = 75000,
             amount = 5,
             info = {},
             type = "item",
@@ -569,7 +569,7 @@ Config.Products = {
         },
         [5] = {
             name = "shonen",
-            price = 4000,
+            price = 50000,
             amount = 5,
             info = {},
             type = "item",
@@ -578,7 +578,7 @@ Config.Products = {
         },
         [6] = {
             name = "race_transmission",
-            price = 250,
+            price = 32000,
             amount = 250,
             info = {},
             type = "item",
@@ -587,7 +587,7 @@ Config.Products = {
         },
         [7] = {
             name = "race_brakes",
-            price = 250,
+            price = 28000,
             amount = 250,
             info = {},
             type = "item",
@@ -596,7 +596,7 @@ Config.Products = {
         },
         [8] = {
             name = "car_armor",
-            price = 250,
+            price = 55000,
             amount = 250,
             info = {},
             type = "item",
@@ -605,7 +605,7 @@ Config.Products = {
         },
         [9] = {
             name = "suspension",
-            price = 2500,
+            price = 25000,
             amount = 5,
             info = {},
             type = "item",
@@ -614,7 +614,7 @@ Config.Products = {
         },
         [10] = {
             name = "suspension2",
-            price = 1500,
+            price = 32000,
             amount = 5,
             info = {},
             type = "item",
@@ -623,8 +623,8 @@ Config.Products = {
         },
         [11] = {
             name = "nos",
-            price = 4000,
-            amount = 5,
+            price = 20000,
+            amount = 1,
             info = {},
             type = "item",
             slot = 11,
@@ -632,8 +632,8 @@ Config.Products = {
         },
         [12] = {
             name = "underglow_controller",
-            price = 250,
-            amount = 250,
+            price = 50000,
+            amount = 5,
             info = {},
             type = "item",
             slot = 12,
@@ -641,7 +641,7 @@ Config.Products = {
         },
         [13] = {
             name = "headlights",
-            price = 250,
+            price = 12500,
             amount = 250,
             info = {},
             type = "item",
@@ -650,7 +650,7 @@ Config.Products = {
         },
         [14] = {
             name = "tint_supplies",
-            price = 250,
+            price = 15000,
             amount = 250,
             info = {},
             type = "item",
@@ -659,7 +659,7 @@ Config.Products = {
         },
         [15] = {
             name = "customplate",
-            price = 2500,
+            price = 5000,
             amount = 5,
             info = {},
             type = "item",
@@ -668,7 +668,7 @@ Config.Products = {
         },
         [16] = {
             name = "hood",
-            price = 1500,
+            price = 27500,
             amount = 16,
             info = {},
             type = "item",
@@ -677,7 +677,7 @@ Config.Products = {
         },
         [17] = {
             name = "roof",
-            price = 4000,
+            price = 27500,
             amount = 5,
             info = {},
             type = "item",
@@ -686,7 +686,7 @@ Config.Products = {
         },
         [18] = {
             name = "spoiler",
-            price = 250,
+            price = 30000,
             amount = 250,
             info = {},
             type = "item",
@@ -695,7 +695,7 @@ Config.Products = {
         },
         [19] = {
             name = "bumper",
-            price = 250,
+            price = 28000,
             amount = 250,
             info = {},
             type = "item",
@@ -704,7 +704,7 @@ Config.Products = {
         },
         [20] = {
             name = "skirts",
-            price = 250,
+            price = 22000,
             amount = 250,
             info = {},
             type = "item",
@@ -713,7 +713,7 @@ Config.Products = {
         },
         [21] = {
             name = "exhaust",
-            price = 2500,
+            price = 18750,
             amount = 5,
             info = {},
             type = "item",
@@ -722,7 +722,7 @@ Config.Products = {
         },
         [22] = {
             name = "seat",
-            price = 1500,
+            price = 10000,
             amount = 5,
             info = {},
             type = "item",
@@ -731,7 +731,7 @@ Config.Products = {
         },
         [23] = {
             name = "rims",
-            price = 4000,
+            price = 20000,
             amount = 5,
             info = {},
             type = "item",
@@ -740,7 +740,7 @@ Config.Products = {
         },
         [24] = {
             name = "livery",
-            price = 250,
+            price = 10000,
             amount = 250,
             info = {},
             type = "item",
@@ -749,7 +749,7 @@ Config.Products = {
         },
         [25] = {
             name = "paintcan",
-            price = 250,
+            price = 5000,
             amount = 250,
             info = {},
             type = "item",
@@ -758,7 +758,7 @@ Config.Products = {
         },
         [26] = {
             name = "tires",
-            price = 250,
+            price = 5000,
             amount = 250,
             info = {},
             type = "item",
@@ -776,7 +776,7 @@ Config.Products = {
         },
         [28] = {
             name = "internals",
-            price = 1500,
+            price = 5000,
             amount = 16,
             info = {},
             type = "item",
@@ -785,7 +785,7 @@ Config.Products = {
         },
         [29] = {
             name = "externals",
-            price = 4000,
+            price = 5000,
             amount = 5,
             info = {},
             type = "item",
@@ -793,8 +793,8 @@ Config.Products = {
             requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [30] = {
-            name = "spoiler",
-            price = 250,
+            name = "ducttape",
+            price = 500,
             amount = 250,
             info = {},
             type = "item",
@@ -802,17 +802,17 @@ Config.Products = {
             requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [31] = {
-            name = "ducttape",
-            price = 250,
-            amount = 250,
+            name = "iron",
+            price = 50,
+            amount = 50,
             info = {},
             type = "item",
             slot = 31,
             requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [32] = {
-            name = "iron",
-            price = 10,
+            name = "plastic",
+            price = 50,
             amount = 50,
             info = {},
             type = "item",
@@ -820,8 +820,8 @@ Config.Products = {
             requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [33] = {
-            name = "plastic",
-            price = 10,
+            name = "steel",
+            price = 50,
             amount = 50,
             info = {},
             type = "item",
@@ -829,21 +829,12 @@ Config.Products = {
             requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [34] = {
-            name = "steel",
-            price = 10,
+            name = "aluminum",
+            price = 50,
             amount = 50,
             info = {},
             type = "item",
             slot = 34,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
-        },
-        [35] = {
-            name = "aluminum",
-            price = 10,
-            amount = 50,
-            info = {},
-            type = "item",
-            slot = 35,
             requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
     },
