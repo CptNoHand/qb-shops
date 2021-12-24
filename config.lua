@@ -623,7 +623,7 @@ Config.Products = {
         },
         [11] = {
             name = "nos",
-            price = 20000,
+            price = 75000,
             amount = 1,
             info = {},
             type = "item",
