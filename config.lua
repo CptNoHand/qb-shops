@@ -316,7 +316,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 15,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },        
     },
     ["coffeeshop"] = {
@@ -538,7 +538,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 1,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [2] = {
             name = "toolbox",
@@ -547,7 +547,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 2,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [3] = {
             name = "turbo",
@@ -556,7 +556,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 3,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [4] = {
             name = "v8engine",
@@ -565,7 +565,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 4,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [5] = {
             name = "shonen",
@@ -574,7 +574,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 5,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [6] = {
             name = "race_transmission",
@@ -583,7 +583,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 6,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [7] = {
             name = "race_brakes",
@@ -592,7 +592,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 7,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [8] = {
             name = "car_armor",
@@ -601,7 +601,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 8,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [9] = {
             name = "suspension",
@@ -610,7 +610,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 9,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [10] = {
             name = "suspension2",
@@ -619,7 +619,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 10,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [11] = {
             name = "nos",
@@ -628,7 +628,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 11,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [12] = {
             name = "underglow_controller",
@@ -637,7 +637,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 12,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [13] = {
             name = "headlights",
@@ -646,7 +646,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 13,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [14] = {
             name = "tint_supplies",
@@ -655,7 +655,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 14,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [15] = {
             name = "customplate",
@@ -664,7 +664,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 15,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [16] = {
             name = "hood",
@@ -673,7 +673,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 16,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [17] = {
             name = "roof",
@@ -682,7 +682,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 17,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [18] = {
             name = "spoiler",
@@ -691,7 +691,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 18,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [19] = {
             name = "bumper",
@@ -700,7 +700,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 19,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [20] = {
             name = "skirts",
@@ -709,7 +709,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 20,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [21] = {
             name = "exhaust",
@@ -718,7 +718,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 21,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [22] = {
             name = "seat",
@@ -727,7 +727,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 22,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [23] = {
             name = "rims",
@@ -736,7 +736,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 23,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [24] = {
             name = "livery",
@@ -745,7 +745,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 24,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [25] = {
             name = "paintcan",
@@ -754,7 +754,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 25,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [26] = {
             name = "tires",
@@ -763,7 +763,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 26,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [27] = {
             name = "horn",
@@ -772,7 +772,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 27,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [28] = {
             name = "internals",
@@ -781,7 +781,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 28,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [29] = {
             name = "externals",
@@ -790,7 +790,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 29,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [30] = {
             name = "spoiler",
@@ -799,7 +799,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 30,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [31] = {
             name = "ducttape",
@@ -808,7 +808,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 31,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [32] = {
             name = "iron",
@@ -817,7 +817,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 32,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [33] = {
             name = "plastic",
@@ -826,7 +826,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 33,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [34] = {
             name = "steel",
@@ -835,7 +835,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 34,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [35] = {
             name = "aluminum",
@@ -844,7 +844,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 35,
-            requiredJob = { "mechanic", "redline", "bennys", "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
     },
 }
