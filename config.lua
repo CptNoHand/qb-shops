@@ -247,8 +247,8 @@ Config.Products = {
         },
         [6] = {
             name = "radio",
-            price = 250,
-            amount = 50,
+            price = 7500,
+            amount = 2,
             info = {},
             type = "item",
             slot = 7,
