@@ -378,6 +378,14 @@ Config.Products = {
             type = "item",
             slot = 4,
         },
+        [5] = {
+            name = "skateboard",
+            price = 250,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 5,
+        },
     },
     ["leisureshop"] = {
         [1] = {
