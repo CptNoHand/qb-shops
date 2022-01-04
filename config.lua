@@ -427,8 +427,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 5,
-        },
-    },    
+        },    
         [5] = {
             name = "fishingbait",
             price = 10,
