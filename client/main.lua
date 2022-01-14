@@ -21,7 +21,7 @@ local function SetupItems(shop)
 end
 
 local function DrawText3Ds(x, y, z, text)
-	SetTextScale(0.35, 0.35)
+    SetTextScale(0.35, 0.35)
     SetTextFont(4)
     SetTextProportional(1)
     SetTextColour(255, 255, 255, 215)
@@ -70,16 +70,16 @@ CreateThread(function()
                     InRange = true
                     DrawMarker(2, loc["x"], loc["y"], loc["z"], 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.2, 0.1, 255, 255, 255, 155, 0, 0, 0, 1, 0, 0, 0)
                     if dist < 1 then
-                        DrawText3Ds(loc["x"], loc["y"], loc["z"] + 0.15, '~g~[E]~w~ - Shop')
+                        DrawText3Ds(loc["x"], loc["y"], loc["z"] + 0.15, Lang:t("info.interact"))
                         if IsControlJustPressed(0, 38) then -- E
                             local ShopItems = {}
                             ShopItems.items = {}
-                            QBCore.Functions.TriggerCallback('qb-shops:server:getLicenseStatus', function(hasLicense, hasLicenseItem)
+                            QBCore.Functions.TriggerCallback("qb-shops:server:getLicenseStatus", function(hasLicense, hasLicenseItem)
                                 ShopItems.label = Config.Locations[shop]["label"]
                                 if Config.Locations[shop].type == "weapon" then
                                     if hasLicense and hasLicenseItem then
                                         ShopItems.items = SetupItems(shop)
-                                        QBCore.Functions.Notify("The dealer verifies your license", "success")
+                                        QBCore.Functions.Notify(Lang:t("success.dealer_verify"), "success")
                                         Wait(500)
                                     else
                                         for i = 1, #products do
@@ -95,9 +95,9 @@ CreateThread(function()
                                                 end
                                             end
                                         end
-                                        QBCore.Functions.Notify("The dealer declines to show you firearms", "error")
+                                        QBCore.Functions.Notify(Lang:t("error.dealer_decline"), "error")
                                         Wait(500)
-                                        QBCore.Functions.Notify("Speak with law enforcement to get a firearms license", "error")
+                                        QBCore.Functions.Notify(Lang:t("error.talk_cop"), "error")
                                         Wait(1000)
                                     end
                                 else
@@ -123,50 +123,19 @@ CreateThread(function()
 end)
 
 CreateThread(function()
-	for store, _ in pairs(Config.Locations) do
-		if Config.Locations[store]["showblip"] then
-			StoreBlip = AddBlipForCoord(Config.Locations[store]["coords"][1]["x"], Config.Locations[store]["coords"][1]["y"], Config.Locations[store]["coords"][1]["z"])
-			SetBlipColour(StoreBlip, 0)
-
-			if Config.Locations[store]["products"] == Config.Products["normal"] then
-				SetBlipSprite(StoreBlip, 52)
-				SetBlipScale(StoreBlip, 0.6)
-			elseif Config.Locations[store]["products"] == Config.Products["coffeeplace"] then
-				SetBlipSprite(StoreBlip, 52)
-				SetBlipScale(StoreBlip, 0.6)
-			elseif Config.Locations[store]["products"] == Config.Products["gearshop"] then
-				SetBlipSprite(StoreBlip, 52)
-				SetBlipScale(StoreBlip, 0.6)
-			elseif Config.Locations[store]["products"] == Config.Products["hardware"] then
-				SetBlipSprite(StoreBlip, 402)
-				SetBlipScale(StoreBlip, 0.8)
-            elseif Config.Locations[store]["products"] == Config.Products["mechanic"] then
-				SetBlipSprite(StoreBlip, 402)
-				SetBlipScale(StoreBlip, 0.8)
-			elseif Config.Locations[store]["products"] == Config.Products["weapons"] then
-				SetBlipSprite(StoreBlip, 110)
-				SetBlipScale(StoreBlip, 0.85)
-			elseif Config.Locations[store]["products"] == Config.Products["leisureshop"] then
-				SetBlipSprite(StoreBlip, 52)
-				SetBlipScale(StoreBlip, 0.6)
-				SetBlipColour(StoreBlip, 3)
-			elseif Config.Locations[store]["products"] == Config.Products["mustapha"] then
-				SetBlipSprite(StoreBlip, 225)
-				SetBlipScale(StoreBlip, 0.6)
-				SetBlipColour(StoreBlip, 3)
-			elseif Config.Locations[store]["products"] == Config.Products["coffeeshop"] then
-				SetBlipSprite(StoreBlip, 140)
-				SetBlipScale(StoreBlip, 0.55)
-			elseif Config.Locations[store]["products"] == Config.Products["casino"] then
-				SetBlipSprite(StoreBlip, 617)
-				SetBlipScale(StoreBlip, 0.70)
-			end
-
-			SetBlipDisplay(StoreBlip, 4)
-			SetBlipAsShortRange(StoreBlip, true)
-			BeginTextCommandSetBlipName("STRING")
-			AddTextComponentSubstringPlayerName(Config.Locations[store]["label"])
-			EndTextCommandSetBlipName(StoreBlip)
-		end
-	end
+    for store, _ in pairs(Config.Locations) do
+        if Config.Locations[store]["showblip"] then
+            for i = 1, #Config.Locations[store]["coords"] do
+                StoreBlip = AddBlipForCoord(Config.Locations[store]["coords"][i]["x"], Config.Locations[store]["coords"][i]["y"], Config.Locations[store]["coords"][i]["z"])
+                SetBlipColour(StoreBlip, 0)
+                SetBlipSprite(StoreBlip, Config.Locations[store]["blipsprite"])
+                SetBlipScale(StoreBlip, 0.6)
+                SetBlipDisplay(StoreBlip, 4)
+                SetBlipAsShortRange(StoreBlip, true)
+                BeginTextCommandSetBlipName("STRING")
+                AddTextComponentSubstringPlayerName(Config.Locations[store]["label"])
+                EndTextCommandSetBlipName(StoreBlip)
+            end
+        end
+    end
 end)
