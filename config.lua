@@ -386,6 +386,22 @@ Config.Products = {
             type = "item",
             slot = 5,
         },
+        [6] = {
+            name = "spray",
+            price = 800,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 6,
+        },
+        [7] = {
+            name = "spray_remover",
+            price = 250,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 7,
+        },
     },
     ["leisureshop"] = {
         [1] = {
