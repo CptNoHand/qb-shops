@@ -388,7 +388,7 @@ Config.Products = {
         },
         [6] = {
             name = "spray",
-            price = 800,
+            price = 500,
             amount = 5,
             info = {},
             type = "item",
