@@ -402,6 +402,30 @@ Config.Products = {
             type = "item",
             slot = 7,
         },
+        [8] = {
+            name = "backpack_small",
+            price = 500,
+            amount = 2,
+            info = {},
+            type = "item",
+            slot = 8,
+        },
+        [9] = {
+            name = "backpack_medium",
+            price = 1500,
+            amount = 2,
+            info = {},
+            type = "item",
+            slot = 9,
+        },
+        [10] = {
+            name = "backpack_large",
+            price = 2500,
+            amount = 2,
+            info = {},
+            type = "item",
+            slot = 10,
+        },
     },
     ["leisureshop"] = {
         [1] = {
