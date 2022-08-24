@@ -3,7 +3,7 @@ Config.UseTarget = GetConvar('UseTarget', 'false') == 'true' -- Use qb-target in
 
 Config.SellCasinoChips = {
     coords = vector4(950.37, 34.72, 71.87, 33.82),
-    radius = 1.5,
+    radius = 2.5,
     ped = 's_m_y_casino_01'
 }
 
@@ -95,7 +95,7 @@ Config.Products = {
             amount = 5000,
             info = {},
             type = "item",
-            slot = 12,
+            slot = 11,
         },
         [12] = {
             name = "sushirolls",
@@ -186,28 +186,12 @@ Config.Products = {
             slot = 22,
         },
         [23] = {
-            name = "boosterpack",
-            price = 25,
-            amount = 100,
+            name = "notepad",
+            price = 100,
+            amount = 50,
             info = {},
             type = "item",
             slot = 23,
-        },
-        [24] = {
-            name = "boosterbox",
-            price = 50,
-            amount = 50,
-            info = {},
-            type = "item",
-            slot = 24,
-        },
-        [25] = {
-            name = "notepad",
-            price = 25,
-            amount = 50,
-            info = {},
-            type = "item",
-            slot = 25,
         },
     },
     ["hardware"] = {
@@ -217,7 +201,7 @@ Config.Products = {
             amount = 250,
             info = {},
             type = "item",
-            slot = 2,
+            slot = 1,
         },
         [2] = {
             name = "weapon_hammer",
@@ -225,7 +209,7 @@ Config.Products = {
             amount = 250,
             info = {},
             type = "item",
-            slot = 3,
+            slot = 2,
         },
         [3] = {
             name = "repairkit",
@@ -233,7 +217,7 @@ Config.Products = {
             amount = 50,
             info = {},
             type = "item",
-            slot = 4,
+            slot = 3,
             requiredJob = { "mechanic", "police" }
         },
         [4] = {
@@ -242,7 +226,7 @@ Config.Products = {
             amount = 50,
             info = {},
             type = "item",
-            slot = 5,
+            slot = 4,
         },
         [5] = {
             name = "phone",
@@ -250,7 +234,7 @@ Config.Products = {
             amount = 50,
             info = {},
             type = "item",
-            slot = 6,
+            slot = 5,
         },
         [6] = {
             name = "radio",
@@ -258,7 +242,7 @@ Config.Products = {
             amount = 2,
             info = {},
             type = "item",
-            slot = 7,
+            slot = 6,
         },
         [7] = {
             name = "binoculars",
@@ -266,7 +250,7 @@ Config.Products = {
             amount = 50,
             info = {},
             type = "item",
-            slot = 8,
+            slot = 7,
         },
         [8] = {
             name = "firework1",
@@ -274,7 +258,7 @@ Config.Products = {
             amount = 50,
             info = {},
             type = "item",
-            slot = 9,
+            slot = 8,
         },
         [9] = {
             name = "firework2",
@@ -282,7 +266,7 @@ Config.Products = {
             amount = 50,
             info = {},
             type = "item",
-            slot = 10,
+            slot = 9,
         },
         [10] = {
             name = "firework3",
@@ -290,7 +274,7 @@ Config.Products = {
             amount = 50,
             info = {},
             type = "item",
-            slot = 11,
+            slot = 10,
         },
         [11] = {
             name = "firework4",
@@ -298,7 +282,7 @@ Config.Products = {
             amount = 50,
             info = {},
             type = "item",
-            slot = 12,
+            slot = 11,
         },
         [12] = {
             name = "fitbit",
@@ -306,7 +290,7 @@ Config.Products = {
             amount = 150,
             info = {},
             type = "item",
-            slot = 13,
+            slot = 12,
         },
         [13] = {
             name = "cleaningkit",
@@ -314,7 +298,7 @@ Config.Products = {
             amount = 150,
             info = {},
             type = "item",
-            slot = 14,
+            slot = 13,
         },
         [14] = {
             name = "advancedrepairkit",
