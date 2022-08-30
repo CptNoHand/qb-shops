@@ -1,4 +1,11 @@
 Config = {}
+Config.UseTarget = GetConvar('UseTarget', 'false') == 'true' -- Use qb-target interactions (don't change this, go to your server.cfg and add `setr UseTarget true` to use this and just that from true to false or the other way around)
+
+Config.SellCasinoChips = {
+    coords = vector4(950.37, 34.72, 71.87, 33.82),
+    radius = 2.5,
+    ped = 's_m_y_casino_01'
+}
 
 Config.Products = {
     ["normal"] = {
@@ -180,7 +187,7 @@ Config.Products = {
         },
         [23] = {
             name = "notepad",
-            price = 25,
+            price = 100,
             amount = 50,
             info = {},
             type = "item",
@@ -211,7 +218,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 3,
-            requiredJob = { "mechanic" }
+            requiredJob = { "mechanic", "police" }
         },
         [4] = {
             name = "screwdriverset",
@@ -300,7 +307,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 14,
-            requiredJob = { "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },        
     },
     ["weedshop"] = {
@@ -327,6 +334,64 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 3,
+        },
+        [4] = {
+            name = "water",
+            price = 5,
+            amount = 15,
+            info = {},
+            type = "item",
+            slot = 4,
+        },
+    },
+    ["liquor"] = {
+        [1] = {
+            name = "sandwich",
+            price = 2,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 1,
+        },
+        [2] = {
+            name = "beer",
+            price = 7,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 2,
+        },
+        [3] = {
+            name = "whiskey",
+            price = 10,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 3,
+        },
+        [4] = {
+            name = "vodka",
+            price = 12,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 4,
+        },
+        [5] = {
+            name = "lighter",
+            price = 2,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 5,
+        },
+        [6] = {
+            name = "rolling_paper",
+            price = 2,
+            amount = 5000,
+            info = {},
+            type = "item",
+            slot = 6,
         },
     },
     ["gearshop"] = {
@@ -386,6 +451,30 @@ Config.Products = {
             type = "item",
             slot = 7,
         },
+        [8] = {
+            name = "backpack_small",
+            price = 500,
+            amount = 2,
+            info = {},
+            type = "item",
+            slot = 8,
+        },
+        [9] = {
+            name = "backpack_medium",
+            price = 1500,
+            amount = 2,
+            info = {},
+            type = "item",
+            slot = 9,
+        },
+        [10] = {
+            name = "backpack_large",
+            price = 2500,
+            amount = 2,
+            info = {},
+            type = "item",
+            slot = 10,
+        },
     },
     ["leisureshop"] = {
         [1] = {
@@ -403,7 +492,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 2,
-        },    
+        },
         [3] = {
             name = "diving_gear",
             price = 2500,
@@ -437,26 +526,26 @@ Config.Products = {
             slot = 6,
         },
     },   
-    ["backpacks"] = {
+    ["mustapha"] = {
         [1] = {
-            name = "backpack_small",
-            price = 500,
+            name = "parachute",
+            price = 2500,
             amount = 10,
             info = {},
             type = "item",
             slot = 1,
         },
         [2] = {
-            name = "backpack_medium",
-            price = 1500,
-            amount = 10,
+            name = "binoculars",
+            price = 50,
+            amount = 50,
             info = {},
             type = "item",
             slot = 2,
         },    
         [3] = {
-            name = "backpack_large",
-            price = 3000,
+            name = "diving_gear",
+            price = 2500,
             amount = 10,
             info = {},
             type = "item",
@@ -479,7 +568,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 2,
-            requiredJob = { "police" }
+            requiredJob = { "mechanic", "police" }
         },
         [3] = {
             name = "weapon_pistol",
@@ -518,241 +607,232 @@ Config.Products = {
             requiresLicense = true
         },
     },
-    ["coffeeplace"] = {
-        [1] = {
-            name = "coffee",
-            price = 5,
-            amount = 500,
-            info = {},
-            type = "item",
-            slot = 1,
-        },
-        [2] = {
-            name = "lighter",
-            price = 2,
-            amount = 50,
-            info = {},
-            type = "item",
-            slot = 2,
-        },
-    },
     ["casino"] = {
         [1] = {
             name = 'casinochips',
             price = 1,
             amount = 999999,
             info = {},
-            type = 'item',
+            type = "item",
             slot = 1,
-        }
+        },
     },
     ["mechanic"] = {
         [1] = {
             name = "mechanic_tools",
             price = 2500,
-            amount = 250,
+            amount = 5,
             info = {},
             type = "item",
             slot = 1,
-            requiredJob = { "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [2] = {
             name = "toolbox",
             price = 2500,
-            amount = 250,
+            amount = 5,
             info = {},
             type = "item",
             slot = 2,
-            requiredJob = { "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [3] = {
+            name = "ducttape",
+            price = 500,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 3,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
+        },
+        [4] = {
             name = "turbo",
             price = 40000,
             amount = 5,
             info = {},
             type = "item",
-            slot = 3,
-            requiredJob = { "lscustoms" }
+            slot = 4,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
-        [4] = {
+        [5] = {
             name = "car_armor",
             price = 60000,
             amount = 5,
             info = {},
             type = "item",
-            slot = 4,
-            requiredJob = { "lscustoms" }
-        },
-        [5] = {
-            name = "nos",
-            price = 45000,
-            amount = 5,
-            info = {},
-            type = "item",
             slot = 5,
-            requiredJob = { "lscustoms" }        
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [6] = {
-            name = "noscolour",
+            name = "nos",
+            price = 45000,
+            amount = 250,
+            info = {},
+            type = "item",
+            slot = 6,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
+        },
+        [7] = {
+            name = "noscan",
             price = 10000,
             amount = 5,
             info = {},
             type = "item",
-            slot = 6,
-            requiredJob = { "lscustoms" }
-        },
-        [7] = {
-            name = "bprooftires",
-            price = 225000,
-            amount = 1,
-            info = {},
-            type = "item",
             slot = 7,
-            requiredJob = { "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [8] = {
-            name = "drifttires",
-            price = 25000,
+            name = "noscolour",
+            price = 55000,
             amount = 5,
             info = {},
             type = "item",
             slot = 8,
-            requiredJob = { "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [9] = {
-            name = "racetransmission2",
-            price = 20000,
-            amount = 5,
-            info = {},
-            type = "item",
-            slot = 9,
-            requiredJob = { "lscustoms" }
-        },
-        [10] = {
             name = "engine1",
             price = 15000,
             amount = 5,
             info = {},
             type = "item",
-            slot = 10,
-            requiredJob = { "lscustoms" }
+            slot = 9,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
-        [11] = {
+        [10] = {
             name = "engine2",
             price = 22500,
             amount = 5,
             info = {},
             type = "item",
-            slot = 11,
-            requiredJob = { "lscustoms" }
+            slot = 10,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
-        [12] = {
+        [11] = {
             name = "engine3",
             price = 35000,
-            amount = 6,
+            amount = 5,
             info = {},
             type = "item",
-            slot = 12,
-            requiredJob = { "lscustoms" }
+            slot = 11,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
-        [13] = {
+        [12] = {
             name = "engine4",
             price = 50000,
             amount = 5,
             info = {},
             type = "item",
-            slot = 13,
-            requiredJob = { "lscustoms" }
+            slot = 12,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
-        [14] = {
-            name = "racetransmission1",
+        [13] = {
+            name = "transmission1",
             price = 10000,
             amount = 5,
             info = {},
             type = "item",
+            slot = 13,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
+        },
+        [14] = {
+            name = "transmission2",
+            price = 15000,
+            amount = 5,
+            info = {},
+            type = "item",
             slot = 14,
-            requiredJob = { "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [15] = {
-            name = "racetransmission2",
-            price = 20000,
+            name = "transmission3",
+            price = 25000,
             amount = 5,
             info = {},
             type = "item",
             slot = 15,
-            requiredJob = { "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [16] = {
-            name = "racetransmission3",
-            price = 30000,
-            amount = 5,
-            info = {},
-            type = "item",
-            slot = 16,
-            requiredJob = { "lscustoms" }
-        },
-        [17] = {
             name = "brakes1",
             price = 9000,
             amount = 5,
             info = {},
             type = "item",
-            slot = 17,
-            requiredJob = { "lscustoms" }
+            slot = 16,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
-        [18] = {
+        [17] = {
             name = "brakes2",
             price = 17500,
             amount = 5,
             info = {},
             type = "item",
-            slot = 18,
-            requiredJob = { "lscustoms" }
+            slot = 17,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
-        [19] = {
+        [18] = {
             name = "brakes3",
             price = 27500,
             amount = 5,
             info = {},
             type = "item",
-            slot = 19,
-            requiredJob = { "lscustoms" }
+            slot = 18,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
-        [21] = {
+        [19] = {
             name = "suspension1",
             price = 8000,
             amount = 5,
             info = {},
             type = "item",
-            slot = 21,
-            requiredJob = { "lscustoms" }
+            slot = 19,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
-        [22] = {
+        [20] = {
             name = "suspension2",
             price = 8000,
             amount = 5,
             info = {},
             type = "item",
-            slot = 22,
-            requiredJob = { "lscustoms" }
+            slot = 20,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
-        [23] = {
+        [21] = {
             name = "suspension3",
             price = 8000,
             amount = 5,
             info = {},
             type = "item",
-            slot = 23,
-            requiredJob = { "lscustoms" }
+            slot = 21,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
-        [24] = {
+        [22] = {
             name = "suspension4",
             price = 8000,
             amount = 5,
             info = {},
             type = "item",
+            slot = 22,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
+        },
+        [23] = {
+            name = "bprooftires",
+            price = 225000,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 23,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
+        },
+        [24] = {
+            name = "drifttires",
+            price = 25000,
+            amount = 250,
+            info = {},
+            type = "item",
             slot = 24,
-            requiredJob = { "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [25] = {
             name = "underglow_controller",
@@ -761,7 +841,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 25,
-            requiredJob = { "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [26] = {
             name = "headlights",
@@ -770,7 +850,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 26,
-            requiredJob = { "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [27] = {
             name = "tint_supplies",
@@ -779,7 +859,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 27,
-            requiredJob = { "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [28] = {
             name = "customplate",
@@ -788,16 +868,16 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 28,
-            requiredJob = { "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [29] = {
             name = "hood",
             price = 8000,
-            amount = 16,
+            amount = 5,
             info = {},
             type = "item",
             slot = 29,
-            requiredJob = { "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [30] = {
             name = "roof",
@@ -806,34 +886,34 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 30,
-            requiredJob = { "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [31] = {
             name = "spoiler",
             price = 8000,
-            amount = 250,
+            amount = 5,
             info = {},
             type = "item",
             slot = 31,
-            requiredJob = { "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [32] = {
             name = "bumper",
             price = 6000,
-            amount = 250,
+            amount = 5,
             info = {},
             type = "item",
             slot = 32,
-            requiredJob = { "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [33] = {
             name = "skirts",
             price = 9000,
-            amount = 250,
+            amount = 5,
             info = {},
             type = "item",
             slot = 33,
-            requiredJob = { "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [34] = {
             name = "exhaust",
@@ -842,7 +922,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 34,
-            requiredJob = { "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [35] = {
             name = "seat",
@@ -851,133 +931,124 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 35,
-            requiredJob = { "lscustoms" }
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [36] = {
-            name = "rims",
-            price = 10000,
-            amount = 5,
-            info = {},
-            type = "item",
-            slot = 36,
-            requiredJob = { "lscustoms" }
-        },
-        [37] = {
-            name = "livery",
-            price = 5000,
-            amount = 5,
-            info = {},
-            type = "item",
-            slot = 37,
-            requiredJob = { "lscustoms" }
-        },
-        [38] = {
-            name = "paintcan",
-            price = 9000,
-            amount = 5,
-            info = {},
-            type = "item",
-            slot = 38,
-            requiredJob = { "lscustoms" }
-        },
-        [39] = {
-            name = "tires",
-            price = 5000,
-            amount = 250,
-            info = {},
-            type = "item",
-            slot = 39,
-            requiredJob = { "lscustoms" }
-        },
-        [40] = {
-            name = "horn",
-            price = 5000,
-            amount = 5,
-            info = {},
-            type = "item",
-            slot = 40,
-            requiredJob = { "lscustoms" }
-        },
-        [41] = {
-            name = "internals",
-            price = 5000,
-            amount = 16,
-            info = {},
-            type = "item",
-            slot = 41,
-            requiredJob = { "lscustoms" }
-        },
-        [42] = {
-            name = "externals",
-            price = 5000,
-            amount = 5,
-            info = {},
-            type = "item",
-            slot = 42,
-            requiredJob = { "lscustoms" }
-        },
-        [43] = {
-            name = "ducttape",
-            price = 500,
-            amount = 250,
-            info = {},
-            type = "item",
-            slot = 43,
-            requiredJob = { "lscustoms" }
-        },
-        [44] = {
-            name = "iron",
-            price = 50,
-            amount = 50,
-            info = {},
-            type = "item",
-            slot = 44,
-            requiredJob = { "lscustoms" }
-        },
-        [45] = {
-            name = "plastic",
-            price = 50,
-            amount = 50,
-            info = {},
-            type = "item",
-            slot = 45,
-            requiredJob = { "lscustoms" }
-        },
-        [46] = {
-            name = "steel",
-            price = 50,
-            amount = 50,
-            info = {},
-            type = "item",
-            slot = 46,
-            requiredJob = { "lscustoms" }
-        },
-        [47] = {
-            name = "aluminum",
-            price = 50,
-            amount = 50,
-            info = {},
-            type = "item",
-            slot = 47,
-            requiredJob = { "lscustoms" }
-        },
-        [48] = {
-            name = "rubber",
-            price = 50,
-            amount = 50,
-            info = {},
-            type = "item",
-            slot = 48,
-            requiredJob = { "lscustoms" }
-        },
-        [49] = {
             name = "rollcage",
             price = 7000,
             amount = 5,
             info = {},
             type = "item",
-            slot = 49,
-            requiredJob = { "lscustoms" }
+            slot = 36,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
+        },
+        [37] = {
+            name = "rims",
+            price = 10000,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 37,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
+        },
+        [38] = {
+            name = "livery",
+            price = 5000,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 38,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
+        },
+        [39] = {
+            name = "paintcan",
+            price = 9000,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 39,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
+        },
+        [40] = {
+            name = "tires",
+            price = 5000,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 40,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
+        },
+        [41] = {
+            name = "horn",
+            price = 5000,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 41,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
+        },
+        [42] = {
+            name = "internals",
+            price = 5000,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 42,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
+        },
+        [43] = {
+            name = "externals",
+            price = 5000,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 43,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
+        },
+        [44] = {
+            name = "steel",
+            price = 50,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 44,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
+        },
+        [45] = {
+            name = "rubber",
+            price = 50,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 45,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
+        },
+        [46] = {
+            name = "aluminum",
+            price = 50,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 46,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
+        },
+        [47] = {
+            name = "iron",
+            price = 50,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 47,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
+        },
+        [48] = {
+            name = "plastic",
+            price = 50,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 48,
+            requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
     },
 }
@@ -986,410 +1057,556 @@ Config.Locations = {
     -- 24/7 Locations
     ["247supermarket"] = {
         ["label"] = "24/7 Supermarket",
-        ["coords"] = {
-            [1] = vector3(25.7, -1347.3, 29.49),
-            [2] = vector3(25.7, -1344.99, 29.49)
-        },
+        ["coords"] = vector4(24.47, -1346.62, 29.5, 271.66),
+        ["ped"] = 'mp_m_shopkeep_01',
+        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-shopping-basket",
+        ["targetLabel"] = "Open Shop",
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
-        ["blipsprite"] = 52
+        ["blipsprite"] = 52,
+        ["blipcolor"] = 0
     },
+
     ["247supermarket2"] = {
         ["label"] = "24/7 Supermarket",
-        ["coords"] = {
-            [1] = vector3(-3038.71, 585.9, 7.9),
-            [2] = vector3(-3041.04, 585.11, 7.9)
-        },
+        ["coords"] = vector4(-3039.54, 584.38, 7.91, 17.27),
+        ["ped"] = 'mp_m_shopkeep_01',
+        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-shopping-basket",
+        ["targetLabel"] = "Open Shop",
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
-        ["blipsprite"] = 52
+        ["blipsprite"] = 52,
+        ["blipcolor"] = 0
     },
+
     ["247supermarket3"] = {
         ["label"] = "24/7 Supermarket",
-        ["coords"] = {
-            [1] = vector3(-3241.47, 1001.14, 12.83),
-            [2] = vector3(-3243.98, 1001.35, 12.83)
-        },
+        ["coords"] = vector4(-3242.97, 1000.01, 12.83, 357.57),
+        ["ped"] = 'mp_m_shopkeep_01',
+        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-shopping-basket",
+        ["targetLabel"] = "Open Shop",
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
-        ["blipsprite"] = 52
+        ["blipsprite"] = 52,
+        ["blipcolor"] = 0
     },
+
     ["247supermarket4"] = {
         ["label"] = "24/7 Supermarket",
-        ["coords"] = {
-            [1] = vector3(1728.66, 6414.16, 35.03),
-            [2] = vector3(1729.72, 6416.27, 35.03)
-        },
+        ["coords"] = vector4(1728.07, 6415.63, 35.04, 242.95),
+        ["ped"] = 'mp_m_shopkeep_01',
+        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-shopping-basket",
+        ["targetLabel"] = "Open Shop",
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
-        ["blipsprite"] = 52
+        ["blipsprite"] = 52,
+        ["blipcolor"] = 0
     },
+
     ["247supermarket5"] = {
         ["label"] = "24/7 Supermarket",
-        ["coords"] = {
-            [1] = vector3(1697.99, 4924.4, 42.06),
-            [2] = vector3(1699.44, 4923.47, 42.06)
-        },
+        ["coords"] = vector4(1959.82, 3740.48, 32.34, 301.57),
+        ["ped"] = 'mp_m_shopkeep_01',
+        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-shopping-basket",
+        ["targetLabel"] = "Open Shop",
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
-        ["blipsprite"] = 52
+        ["blipsprite"] = 52,
+        ["blipcolor"] = 0
     },
+
     ["247supermarket6"] = {
         ["label"] = "24/7 Supermarket",
-        ["coords"] = {
-            [1] = vector3(1961.48, 3739.96, 32.34),
-            [2] = vector3(1960.22, 3742.12, 32.34)
-        },
+        ["coords"] = vector4(549.13, 2670.85, 42.16, 99.39),
+        ["ped"] = 'mp_m_shopkeep_01',
+        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-shopping-basket",
+        ["targetLabel"] = "Open Shop",
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
-        ["blipsprite"] = 52
+        ["blipsprite"] = 52,
+        ["blipcolor"] = 0
     },
+
     ["247supermarket7"] = {
         ["label"] = "24/7 Supermarket",
-        ["coords"] = {
-            [1] = vector3(547.79, 2671.79, 42.15),
-            [2] = vector3(548.1, 2669.38, 42.15)
-        },
+        ["coords"] = vector4(2677.47, 3279.76, 55.24, 335.08),
+        ["ped"] = 'mp_m_shopkeep_01',
+        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-shopping-basket",
+        ["targetLabel"] = "Open Shop",
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
-        ["blipsprite"] = 52
+        ["blipsprite"] = 52,
+        ["blipcolor"] = 0
     },
+
     ["247supermarket8"] = {
         ["label"] = "24/7 Supermarket",
-        ["coords"] = {
-            [1] = vector3(2679.25, 3280.12, 55.24),
-            [2] = vector3(2677.13, 281.38, 55.24)
-        },
+        ["coords"] = vector4(2556.66, 380.84, 108.62, 356.67),
+        ["ped"] = 'mp_m_shopkeep_01',
+        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-shopping-basket",
+        ["targetLabel"] = "Open Shop",
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
-        ["blipsprite"] = 52
+        ["blipsprite"] = 52,
+        ["blipcolor"] = 0
     },
+
     ["247supermarket9"] = {
         ["label"] = "24/7 Supermarket",
-        ["coords"] = {
-            [1] = vector3(2557.94, 382.05, 108.62),
-            [2] = vector3(2555.53, 382.18, 108.62)
-        },
+        ["coords"] = vector4(372.66, 326.98, 103.57, 253.73),
+        ["ped"] = 'mp_m_shopkeep_01',
+        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-shopping-basket",
+        ["targetLabel"] = "Open Shop",
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
-        ["blipsprite"] = 52
-    },
-    ["247supermarket10"] = {
-        ["label"] = "24/7 Supermarket",
-        ["coords"] = {
-            [1] = vector3(373.55, 325.56, 103.56),
-            [2] = vector3(374.29, 327.9, 103.56)
-        },
-        ["products"] = Config.Products["normal"],
-        ["showblip"] = true,
-        ["blipsprite"] = 52
+        ["blipsprite"] = 52,
+        ["blipcolor"] = 0
     },
 
     -- LTD Gasoline Locations
     ["ltdgasoline"] = {
         ["label"] = "LTD Gasoline",
-        ["coords"] = {
-            [1] = vector3(-48.44, -1757.86, 29.42),
-            [2] = vector3(-47.23, -1756.58, 29.42)
-        },
+        ["coords"] = vector4(-47.02, -1758.23, 29.42, 45.05),
+        ["ped"] = 'mp_m_shopkeep_01',
+        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-shopping-basket",
+        ["targetLabel"] = "Open Shop",
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
-        ["blipsprite"] = 52
+        ["blipsprite"] = 52,
+        ["blipcolor"] = 0
     },
+
     ["ltdgasoline2"] = {
         ["label"] = "LTD Gasoline",
-        ["coords"] = {
-            [1] = vector3(-707.41, -912.83, 19.21),
-            [2] = vector3(-707.32, -914.65, 19.21)
-        },
+        ["coords"] = vector4(-706.06, -913.97, 19.22, 88.04),
+        ["ped"] = 'mp_m_shopkeep_01',
+        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-shopping-basket",
+        ["targetLabel"] = "Open Shop",
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
-        ["blipsprite"] = 52
+        ["blipsprite"] = 52,
+        ["blipcolor"] = 0
     },
+
     ["ltdgasoline3"] = {
         ["label"] = "LTD Gasoline",
-        ["coords"] = {
-            [1] = vector3(-1820.33, 792.66, 138.1),
-            [2] = vector3(-1821.55, 793.98, 138.1)
-        },
+        ["coords"] = vector4(-1820.02, 794.03, 138.09, 135.45),
+        ["ped"] = 'mp_m_shopkeep_01',
+        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-shopping-basket",
+        ["targetLabel"] = "Open Shop",
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
-        ["blipsprite"] = 52
+        ["blipsprite"] = 52,
+        ["blipcolor"] = 0
     },
+
     ["ltdgasoline4"] = {
         ["label"] = "LTD Gasoline",
-        ["coords"] = {
-            [1] = vector3(1163.7, -323.92, 69.2),
-            [2] = vector3(1163.4, -322.24, 69.2)
-        },
+        ["coords"] = vector4(1164.71, -322.94, 69.21, 101.72),
+        ["ped"] = 'mp_m_shopkeep_01',
+        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-shopping-basket",
+        ["targetLabel"] = "Open Open Shop",
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
-        ["blipsprite"] = 52
+        ["blipsprite"] = 52,
+        ["blipcolor"] = 0
+    },
+
+    ["ltdgasoline5"] = {
+        ["label"] = "LTD Gasoline",
+        ["coords"] = vector4(1697.87, 4922.96, 42.06, 324.71),
+        ["ped"] = 'mp_m_shopkeep_01',
+        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-shopping-basket",
+        ["targetLabel"] = "Open Shop",
+        ["products"] = Config.Products["normal"],
+        ["showblip"] = true,
+        ["blipsprite"] = 52,
+        ["blipcolor"] = 0
     },
 
     -- Rob's Liquor Locations
     ["robsliquor"] = {
         ["label"] = "Rob's Liqour",
-        ["coords"] = {
-            [1] = vector3(-1222.77, -907.19, 12.32)
-        },
-        ["products"] = Config.Products["normal"],
+        ["coords"] = vector4(-1221.58, -908.15, 12.33, 35.49),
+        ["ped"] = 'mp_m_shopkeep_01',
+        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-shopping-basket",
+        ["targetLabel"] = "Open Shop",
+        ["products"] = Config.Products["liquor"],
         ["showblip"] = true,
-        ["blipsprite"] = 52
+        ["blipsprite"] = 52,
+        ["blipcolor"] = 0
     },
+
     ["robsliquor2"] = {
         ["label"] = "Rob's Liqour",
-        ["coords"] = {
-            [1] = vector3(-1487.7, -378.53, 40.16)
-        },
-        ["products"] = Config.Products["normal"],
+        ["coords"] = vector4(-1486.59, -377.68, 40.16, 139.51),
+        ["ped"] = 'mp_m_shopkeep_01',
+        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-shopping-basket",
+        ["targetLabel"] = "Open Shop",
+        ["products"] = Config.Products["liquor"],
         ["showblip"] = true,
-        ["blipsprite"] = 52
+        ["blipsprite"] = 52,
+        ["blipcolor"] = 0
     },
+
     ["robsliquor3"] = {
         ["label"] = "Rob's Liqour",
-        ["coords"] = {
-            [1] = vector3(-2967.79, 391.64, 15.04)
-        },
-        ["products"] = Config.Products["normal"],
+        ["coords"] = vector4(-2966.39, 391.42, 15.04, 87.48),
+        ["ped"] = 'mp_m_shopkeep_01',
+        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-shopping-basket",
+        ["targetLabel"] = "Open Shop",
+        ["products"] = Config.Products["liquor"],
         ["showblip"] = true,
-        ["blipsprite"] = 52
+        ["blipsprite"] = 52,
+        ["blipcolor"] = 0
     },
+
     ["robsliquor4"] = {
         ["label"] = "Rob's Liqour",
-        ["coords"] = {
-            [1] = vector3(1165.28, 2709.4, 38.15)
-        },
-        ["products"] = Config.Products["normal"],
+        ["coords"] = vector4(1165.17, 2710.88, 38.16, 179.43),
+        ["ped"] = 'mp_m_shopkeep_01',
+        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-shopping-basket",
+        ["targetLabel"] = "Open Shop",
+        ["products"] = Config.Products["liquor"],
         ["showblip"] = true,
-        ["blipsprite"] = 52
+        ["blipsprite"] = 52,
+        ["blipcolor"] = 0
     },
+
     ["robsliquor5"] = {
         ["label"] = "Rob's Liqour",
-        ["coords"] = {
-            [1] = vector3(1135.66, -982.76, 46.41)
-        },
-        ["products"] = Config.Products["normal"],
+        ["coords"] = vector4(1134.2, -982.91, 46.42, 277.24),
+        ["ped"] = 'mp_m_shopkeep_01',
+        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-shopping-basket",
+        ["targetLabel"] = "Open Shop",
+        ["products"] = Config.Products["liquor"],
         ["showblip"] = true,
-        ["blipsprite"] = 52
+        ["blipsprite"] = 52,
+        ["blipcolor"] = 0
     },
 
     -- Hardware Store Locations
     ["hardware"] = {
         ["label"] = "Hardware Store",
-        ["coords"] = {
-            [1] = vector3(45.55, -1749.01, 29.6)
-        },
+        ["coords"] = vector4(45.68, -1749.04, 29.61, 53.13),
+        ["ped"] = 'mp_m_waremech_01',
+        ["scenario"] = "WORLD_HUMAN_CLIPBOARD",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-wrench",
+        ["targetLabel"] = "Open Hardware Store",
         ["products"] = Config.Products["hardware"],
         ["showblip"] = true,
-        ["blipsprite"] = 402
+        ["blipsprite"] = 402,
+        ["blipcolor"] = 0
     },
+
     ["hardware2"] = {
         ["label"] = "Hardware Store",
-        ["coords"] = {
-            [1] = vector3(2747.8, 3472.86, 55.67)
-        },
+        ["coords"] = vector4(2747.71, 3472.85, 55.67, 255.08),
+        ["ped"] = 'mp_m_waremech_01',
+        ["scenario"] = "WORLD_HUMAN_CLIPBOARD",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-wrench",
+        ["targetLabel"] = "Open Hardware Store",
         ["products"] = Config.Products["hardware"],
         ["showblip"] = true,
-        ["blipsprite"] = 402
+        ["blipsprite"] = 402,
+        ["blipcolor"] = 0
     },
+
     ["hardware3"] = {
         ["label"] = "Hardware Store",
-        ["coords"] = {
-            [1] = vector3(-421.84, 6136.09, 31.78)
-        },
+        ["coords"] = vector4(-421.83, 6136.13, 31.88, 228.2),
+        ["ped"] = 'mp_m_waremech_01',
+        ["scenario"] = "WORLD_HUMAN_CLIPBOARD",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-wrench",
+        ["targetLabel"] = "Hardware Store",
         ["products"] = Config.Products["hardware"],
         ["showblip"] = true,
-        ["blipsprite"] = 402
+        ["blipsprite"] = 402,
+        ["blipcolor"] = 0
     },
 
     -- Ammunation Locations
     ["ammunation"] = {
         ["label"] = "Ammunation",
-        ["coords"] = {
-            [1] = vector3(-662.1, -935.3, 21.8)
-        },
+        ["type"] = "weapon",
+        ["coords"] = vector4(-661.96, -933.53, 21.83, 177.05),
+        ["ped"] = 's_m_y_ammucity_01',
+        ["scenario"] = "WORLD_HUMAN_COP_IDLES",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-gun",
+        ["targetLabel"] = "Open Ammunation",
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
-        ["blipsprite"] = 110
+        ["blipsprite"] = 110,
+        ["blipcolor"] = 0
     },
     ["ammunation2"] = {
         ["label"] = "Ammunation",
-        ["coords"] = {
-            [1] = vector3(810.2, -2157.3, 29.6)
-        },
+        ["type"] = "weapon",
+        ["coords"] = vector4(809.68, -2159.13, 29.62, 1.43),
+        ["ped"] = 's_m_y_ammucity_01',
+        ["scenario"] = "WORLD_HUMAN_COP_IDLES",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-gun",
+        ["targetLabel"] = "Open Ammunation",
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
-        ["blipsprite"] = 110
+        ["blipsprite"] = 110,
+        ["blipcolor"] = 0
     },
     ["ammunation3"] = {
         ["label"] = "Ammunation",
-        ["coords"] = {
-            [1] = vector3(1693.4, 3759.5, 34.7)
-        },
+        ["type"] = "weapon",
+        ["coords"] = vector4(1692.67, 3761.38, 34.71, 227.65),
+        ["ped"] = 's_m_y_ammucity_01',
+        ["scenario"] = "WORLD_HUMAN_COP_IDLES",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-gun",
+        ["targetLabel"] = "Open Ammunation",
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
-        ["blipsprite"] = 110
+        ["blipsprite"] = 110,
+        ["blipcolor"] = 0
     },
     ["ammunation4"] = {
         ["label"] = "Ammunation",
-        ["coords"] = {
-            [1] = vector3(-330.2, 6083.8, 31.4)
-        },
+        ["type"] = "weapon",
+        ["coords"] = vector4(-331.23, 6085.37, 31.45, 228.02),
+        ["ped"] = 's_m_y_ammucity_01',
+        ["scenario"] = "WORLD_HUMAN_COP_IDLES",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-gun",
+        ["targetLabel"] = "Open Ammunation",
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
-        ["blipsprite"] = 110
+        ["blipsprite"] = 110,
+        ["blipcolor"] = 0
     },
     ["ammunation5"] = {
         ["label"] = "Ammunation",
-        ["coords"] = {
-            [1] = vector3(252.3, -50.0, 69.9)
-        },
+        ["type"] = "weapon",
+        ["coords"] = vector4(253.63, -51.02, 69.94, 72.91),
+        ["ped"] = 's_m_y_ammucity_01',
+        ["scenario"] = "WORLD_HUMAN_COP_IDLES",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-gun",
+        ["targetLabel"] = "Open Ammunation",
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
-        ["blipsprite"] = 110
+        ["blipsprite"] = 110,
+        ["blipcolor"] = 0
     },
     ["ammunation6"] = {
         ["label"] = "Ammunation",
-        ["coords"] = {
-            [1] = vector3(22.0, -1107.2, 29.8)
-        },
+        ["type"] = "weapon",
+        ["coords"] = vector4(23.0, -1105.67, 29.8, 162.91),
+        ["ped"] = 's_m_y_ammucity_01',
+        ["scenario"] = "WORLD_HUMAN_COP_IDLES",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-gun",
+        ["targetLabel"] = "Open Ammunation",
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
-        ["blipsprite"] = 110
+        ["blipsprite"] = 110,
+        ["blipcolor"] = 0
     },
     ["ammunation7"] = {
         ["label"] = "Ammunation",
-        ["coords"] = {
-            [1] = vector3(2567.6, 294.3, 108.7)
-        },
+        ["type"] = "weapon",
+        ["coords"] = vector4(2567.48, 292.59, 108.73, 349.68),
+        ["ped"] = 's_m_y_ammucity_01',
+        ["scenario"] = "WORLD_HUMAN_COP_IDLES",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-gun",
+        ["targetLabel"] = "Open Ammunation",
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
-        ["blipsprite"] = 110
+        ["blipsprite"] = 110,
+        ["blipcolor"] = 0
     },
     ["ammunation8"] = {
         ["label"] = "Ammunation",
-        ["coords"] = {
-            [1] = vector3(-1117.5, 2698.6, 18.5)
-        },
+        ["type"] = "weapon",
+        ["coords"] = vector4(-1118.59, 2700.05, 18.55, 221.89),
+        ["ped"] = 's_m_y_ammucity_01',
+        ["scenario"] = "WORLD_HUMAN_COP_IDLES",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-gun",
+        ["targetLabel"] = "Open Ammunation",
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
-        ["blipsprite"] = 110
+        ["blipsprite"] = 110,
+        ["blipcolor"] = 0
     },
     ["ammunation9"] = {
         ["label"] = "Ammunation",
-        ["coords"] = {
-            [1] = vector3(842.4, -1033.4, 28.1)
-        },
+        ["type"] = "weapon",
+        ["coords"] = vector4(841.92, -1035.32, 28.19, 1.56),
+        ["ped"] = 's_m_y_ammucity_01',
+        ["scenario"] = "WORLD_HUMAN_COP_IDLES",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-gun",
+        ["targetLabel"] = "Open Ammunation",
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
-        ["blipsprite"] = 110
+        ["blipsprite"] = 110,
+        ["blipcolor"] = 0
+    },
+    ["ammunation10"] = {
+        ["label"] = "Ammunation",
+        ["type"] = "weapon",
+        ["coords"] = vector4(-1304.19, -395.12, 36.7, 75.03),
+        ["ped"] = 's_m_y_ammucity_01',
+        ["scenario"] = "WORLD_HUMAN_COP_IDLES",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-gun",
+        ["targetLabel"] = "Open Ammunation",
+        ["products"] = Config.Products["weapons"],
+        ["showblip"] = true,
+        ["blipsprite"] = 110,
+        ["blipcolor"] = 0
+    },
+    ["ammunation11"] = {
+        ["label"] = "Ammunation",
+        ["type"] = "weapon",
+        ["coords"] = vector4(-3173.31, 1088.85, 20.84, 244.18),
+        ["ped"] = 's_m_y_ammucity_01',
+        ["scenario"] = "WORLD_HUMAN_COP_IDLES",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-gun",
+        ["targetLabel"] = "Open Ammunation",
+        ["products"] = Config.Products["weapons"],
+        ["showblip"] = true,
+        ["blipsprite"] = 110,
+        ["blipcolor"] = 0
     },
 
     -- Casino Locations
     ["casino"] = {
         ["label"] = "Diamond Casino",
-        ["coords"] = {
-            [1] = vector3(948.3834, 34.21247, 71.839)
-        },
+        ["coords"] = vector4(949.35, 31.55, 71.84, 84.44),
+        ["ped"] = 'csb_tomcasino',
+        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE",
+        ["radius"] = 2.5,
+        ["targetIcon"] = "fas fa-coins",
+        ["targetLabel"] = "Buy Chips",
         ["products"] = Config.Products["casino"],
         ["showblip"] = true,
-        ["blipsprite"] = 617
+        ["blipsprite"] = 617,
+        ["blipcolor"] = 0
     },
-    ["casino2"] = {
+
+    ["casinobar"] = {
         ["label"] = "Casino Bar",
-        ["coords"] = {
-            [1] = vector3(936.1185, 28.61719, 71.833)
-        },
-        ["products"] = Config.Products["normal"],
-        ["showblip"] = true,
-        ["blipsprite"] = 52
+        ["coords"] = vector4(937.45, 27.22, 71.83, 61.21),
+        ["ped"] = 'a_m_y_smartcaspat_01',
+        ["scenario"] = "WORLD_HUMAN_VALET",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-wine-bottle",
+        ["targetLabel"] = "Open Casino Bar",
+        ["products"] = Config.Products["liquor"],
+        ["showblip"] = false,
+        ["blipsprite"] = 52,
+        ["blipcolor"] = 0
     },
 
     -- Weedshop Locations
     ["weedshop"] = {
-        ["label"] = "Smoke on the water",
-        ["coords"] = {
-            [1] = vector3(-1172.43, -1572.24, 4.66)
-        },
+        ["label"] = "Smoke On The Water",
+        ["coords"] = vector4(-1171.31, -1570.89, 4.66, 130.03),
+        ["ped"] = 'a_m_y_hippy_01',
+        ["scenario"] = "WORLD_HUMAN_AA_SMOKE",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-cannabis",
+        ["targetLabel"] = "Open Weed Shop",
         ["products"] = Config.Products["weedshop"],
         ["showblip"] = true,
-        ["blipsprite"] = 140
-    },
-
-    -- Backpack Locations
-    ["backpacks"] = {
-        ["label"] = "Backpack Store",
-        ["coords"] = {
-            [1] = vector3(243.83, -1492.97, 29.29)
-        },
-        ["products"] = Config.Products["backpacks"],
-        ["showblip"] = true,
-        ["blipsprite"] = 784
-    },
-
-    -- Bean Coffee Locations
-    ["beancoffee"] = {
-        ["label"] = "Bean Machine Coffee",
-        ["coords"] = {
-            [1] = vector3(-633.72, 236.15, 81.88)
-        },
-        ["products"] = Config.Products["coffeeplace"],
-        ["showblip"] = true,
-        ["blipsprite"] = 52
+        ["blipsprite"] = 140,
+        ["blipcolor"] = 0
     },
 
     -- Sea Word Locations
-    ["seaword1"] = {
-        ["label"] = "Sea Word",
-        ["coords"] = {
-            [1] = vector3(-1686.9, -1072.23, 13.15)
-        },
+    ["seaword"] = {
+        ["label"] = "Sea Word Gear",
+        ["coords"] = vector4(-1687.03, -1072.18, 13.15, 52.93),
+        ["ped"] = 'a_m_y_beach_01',
+        ["scenario"] = "WORLD_HUMAN_STAND_IMPATIENT",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-fish",
+        ["targetLabel"] = "Sea Word",
         ["products"] = Config.Products["gearshop"],
         ["showblip"] = true,
-        ["blipsprite"] = 52
+        ["blipsprite"] = 52,
+        ["blipcolor"] = 0
     },
 
     -- Leisure Shop Locations
     ["leisureshop"] = {
         ["label"] = "Leisure Shop",
-        ["coords"] = {
-            [1] = vector3(-1505.91, 1511.78, 115.29)
-        },
+        ["coords"] = vector4(-1505.91, 1511.95, 115.29, 257.13),
+        ["ped"] = 'a_m_y_beach_01',
+        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE_CLUBHOUSE",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-leaf",
+        ["targetLabel"] = "Open Leisure Shop",
         ["products"] = Config.Products["leisureshop"],
         ["showblip"] = true,
-        ["blipsprite"] = 52
+        ["blipsprite"] = 52,
+        ["blipcolor"] = 0
     },
-
-    -- Local Store Locations
-    ["delvecchioliquor"] = {
-        ["label"] = "Del Vecchio Liquor",
-        ["coords"] = {
-            [1] = vector3(-159.36, 6321.59, 31.58),
-            [2] = vector3(-160.66, 6322.85, 31.58)
-        },
-        ["products"] = Config.Products["normal"],
-        ["showblip"] = true,
-        ["blipsprite"] = 52
-    },
-    ["donscountrystore"] = {
-        ["label"] = "Don's Country Store",
-        ["coords"] = {
-            [1] = vector3(161.41, 6640.78, 31.69),
-            [2] = vector3(163.04, 6642.45, 31.70)
-        },
-        ["products"] = Config.Products["normal"],
-        ["showblip"] = true,
-        ["blipsprite"] = 52
-    },
+    --Mechanic Shop
     ["mechanic"] = {
         ["label"] = "Autoteile",
-        ["type"] = "hardware",
-        ["coords"] = {
-            [1] = vector3(1196.48, -3253.67, 7.1)
-        },
+        ["coords"] = vector4(1196.48, -3253.67, 7.1, 320.2),
+        ["ped"] = 'a_m_y_beach_01',
+        ["scenario"] = "WORLD_HUMAN_STAND_IMPATIENT",
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-fish",
+        ["targetLabel"] = "Autoteile",
         ["products"] = Config.Products["mechanic"],
         ["showblip"] = true,
-        ["blipsprite"] = 402
+        ["blipsprite"] = 52,
+        ["blipcolor"] = 0
     },
 }
