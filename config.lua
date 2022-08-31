@@ -1060,7 +1060,7 @@ Config.Products = {
             requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [49] = {
-            name = "steel",
+            name = "newoil",
             price = 50,
             amount = 50,
             info = {},
@@ -1069,7 +1069,7 @@ Config.Products = {
             requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [50] = {
-            name = "rubber",
+            name = "sparkplugs",
             price = 50,
             amount = 50,
             info = {},
@@ -1078,7 +1078,7 @@ Config.Products = {
             requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [51] = {
-            name = "aluminum",
+            name = "carbattery",
             price = 50,
             amount = 50,
             info = {},
@@ -1087,7 +1087,7 @@ Config.Products = {
             requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [52] = {
-            name = "iron",
+            name = "axleparts",
             price = 50,
             amount = 50,
             info = {},
@@ -1096,7 +1096,7 @@ Config.Products = {
             requiredJob = { "mechanic", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [53] = {
-            name = "plastic",
+            name = "sparetire",
             price = 50,
             amount = 50,
             info = {},
