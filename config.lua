@@ -194,6 +194,72 @@ Config.Products = {
             slot = 23,
         },
     },
+    ["masker"] = {
+        [1] = {
+            name = "terror",
+            price = 500,
+            amount = 10,
+            info = {},
+            type = "item",
+            slot = 1,
+        },
+        [2] = {
+            name = "hockeymask",
+            price = 500,
+            amount = 10,
+            info = {},
+            type = "item",
+            slot = 2,
+        },
+        [3] = {
+            name = "blackbandana",
+            price = 500,
+            amount = 10,
+            info = {},
+            type = "item",
+            slot = 3,
+        },
+        [4] = {
+            name = "tshirtmask",
+            price = 500,
+            amount = 10,
+            info = {},
+            type = "item",
+            slot = 4,
+        },
+        [5] = {
+            name = "scarecrowmask",
+            price = 500,
+            amount = 10,
+            info = {},
+            type = "item",
+            slot = 5,
+        },
+        [6] = {
+            name = "scarf",
+            price = 500,
+            amount = 10,
+            info = {},
+            type = "item",
+            slot = 6,
+        },
+        [7] = {
+            name = "monkeymask",
+            price = 500,
+            amount = 10,
+            info = {},
+            type = "item",
+            slot = 7,
+        },
+        [8] = {
+            name = "skullmask",
+            price = 500,
+            amount = 10,
+            info = {},
+            type = "item",
+            slot = 8,
+        },
+    },
     ["hardware"] = {
         [1] = {
             name = "weapon_wrench",
@@ -392,6 +458,14 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 6,
+        },
+        [7] = {
+            name = "shears",
+            price = 150,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 7,
         },
     },
     ["gearshop"] = {
@@ -1698,6 +1772,21 @@ Config.Locations = {
         ["products"] = Config.Products["mechanic"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
+        ["blipcolor"] = 0
+    },
+    ["masker"] = {
+        ["label"] = "Maskerwinkel",
+        ["coords"] = {
+            [1] = vector4(-1334.89, -1277.6, 4.96, 105.15)
+        },
+        ["ped"] = 'S_M_M_StrVend_01',
+        ["radius"] = 3.0,
+        ["targetIcon"] = "fas fa-leaf",
+        ["targetLabel"] = "Open Mask Shop",
+        ["products"] = Config.Products["masker"],
+        ["showblip"] = true,
+        ["blipsprite"] = 84,
+        ["blipscale"] = 0.8,
         ["blipcolor"] = 0
     },
 }
