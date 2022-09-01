@@ -1709,7 +1709,7 @@ Config.Locations = {
         ["products"] = Config.Products["liquor"],
         ["showblip"] = false,
         ["blipsprite"] = 52,
-        ["blipscale"] = 0.8,
+        ["blipscale"] = 0.7,
         ["blipcolor"] = 0
     },
 
@@ -1725,7 +1725,7 @@ Config.Locations = {
         ["products"] = Config.Products["weedshop"],
         ["showblip"] = true,
         ["blipsprite"] = 140,
-        ["blipscale"] = 0.8,
+        ["blipscale"] = 0.7,
         ["blipcolor"] = 0
     },
 
@@ -1741,7 +1741,7 @@ Config.Locations = {
         ["products"] = Config.Products["gearshop"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
-        ["blipscale"] = 0.8,
+        ["blipscale"] = 0.7,
         ["blipcolor"] = 0
     },
 
@@ -1757,7 +1757,7 @@ Config.Locations = {
         ["products"] = Config.Products["leisureshop"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
-        ["blipscale"] = 0.8,
+        ["blipscale"] = 0.7,
         ["blipcolor"] = 0
     },
     --Mechanic Shop
@@ -1784,7 +1784,7 @@ Config.Locations = {
         ["products"] = Config.Products["masker"],
         ["showblip"] = true,
         ["blipsprite"] = 84,
-        ["blipscale"] = 0.8,
+        ["blipscale"] = 0.7,
         ["blipcolor"] = 0
     },
 }
