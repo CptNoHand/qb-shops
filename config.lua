@@ -1775,10 +1775,8 @@ Config.Locations = {
         ["blipcolor"] = 0
     },
     ["masker"] = {
-        ["label"] = "Maskerwinkel",
-        ["coords"] = {
-            [1] = vector4(-1334.89, -1277.6, 4.96, 105.15)
-        },
+        ["label"] = "Masquerade",
+        ["coords"] = vector4(-1262.78, -1424.2, 4.37, 128.39),
         ["ped"] = 'S_M_M_StrVend_01',
         ["radius"] = 3.0,
         ["targetIcon"] = "fas fa-leaf",
