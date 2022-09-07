@@ -1150,7 +1150,7 @@ Config.Products = {
             requiredJob = { "ottos", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [49] = {
-            name = "newoil",
+            name = "rubber",
             price = 500,
             amount = 50,
             info = {},
@@ -1159,7 +1159,7 @@ Config.Products = {
             requiredJob = { "ottos", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [50] = {
-            name = "sparkplugs",
+            name = "aluminum",
             price = 500,
             amount = 50,
             info = {},
@@ -1167,7 +1167,7 @@ Config.Products = {
             slot = 50,
             requiredJob = { "ottos", "redline", "bennys", "lscustoms", "custommotors" }
         },
-        [51] = {
+        --[[[51] = {
             name = "carbattery",
             price = 550,
             amount = 50,
@@ -1193,7 +1193,7 @@ Config.Products = {
             type = "item",
             slot = 53,
             requiredJob = { "ottos", "redline", "bennys", "lscustoms", "custommotors" }
-        },
+        },]]--
     },
 }
 
