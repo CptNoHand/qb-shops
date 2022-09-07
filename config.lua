@@ -1151,7 +1151,7 @@ Config.Products = {
         },
         [49] = {
             name = "rubber",
-            price = 500,
+            price = 50,
             amount = 50,
             info = {},
             type = "item",
@@ -1160,7 +1160,7 @@ Config.Products = {
         },
         [50] = {
             name = "aluminum",
-            price = 500,
+            price = 50,
             amount = 50,
             info = {},
             type = "item",
