@@ -872,7 +872,7 @@ Config.Products = {
         },
         [20] = {
             name = "suspension1",
-            price = 8000,
+            price = 2000,
             amount = 5,
             info = {},
             type = "item",
@@ -881,7 +881,7 @@ Config.Products = {
         },
         [21] = {
             name = "suspension2",
-            price = 8000,
+            price = 2500,
             amount = 5,
             info = {},
             type = "item",
@@ -890,7 +890,7 @@ Config.Products = {
         },
         [22] = {
             name = "suspension3",
-            price = 8000,
+            price = 3000,
             amount = 5,
             info = {},
             type = "item",
@@ -899,7 +899,7 @@ Config.Products = {
         },
         [23] = {
             name = "suspension4",
-            price = 8000,
+            price = 3500,
             amount = 5,
             info = {},
             type = "item",
@@ -908,7 +908,7 @@ Config.Products = {
         },
         [24] = {
             name = "suspension5",
-            price = 8000,
+            price = 4000,
             amount = 5,
             info = {},
             type = "item",
@@ -1147,6 +1147,15 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 50,
+            requiredJob = { "ottos", "redline", "bennys", "lscustoms", "custommotors" }
+        },
+        [51] = {
+            name = "carradio",
+            price = 50,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 51,
             requiredJob = { "ottos", "redline", "bennys", "lscustoms", "custommotors" }
         },
         --[[[51] = {
