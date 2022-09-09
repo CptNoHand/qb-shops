@@ -277,15 +277,6 @@ Config.Products = {
             type = "item",
             slot = 2,
         },
-        [3] = {
-            name = "repairkit",
-            price = 250,
-            amount = 50,
-            info = {},
-            type = "item",
-            slot = 3,
-            requiredJob = { "mechanic", "police" }
-        },
         [4] = {
             name = "screwdriverset",
             price = 750,
@@ -365,15 +356,6 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 13,
-        },
-        [14] = {
-            name = "advancedrepairkit",
-            price = 500,
-            amount = 50,
-            info = {},
-            type = "item",
-            slot = 14,
-            requiredJob = { "ottos", "redline", "bennys", "lscustoms", "custommotors" }
         },
         [15] = {
             name = "amonia",
